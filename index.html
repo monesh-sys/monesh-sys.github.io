@@ -1,101 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<!-- ✅ PAGE TITLE (Google uses this) -->
-<title>Mini Form</title>
+    <!-- 🔍 GOOGLE TITLE -->
+    <title>Mini Form | Student Data Collection</title>
 
-<!-- ✅ WEBSITE DESCRIPTION (Google uses this) -->
-<meta name="description" content="Mini Form website by Monesh hosted on GitHub Pages">
+    <!-- 🔍 GOOGLE DESCRIPTION -->
+    <meta name="description" content="Mini Form is a student data collection website created by Monesh and hosted on GitHub Pages.">
 
-<!-- ✅ RESPONSIVE -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 🔍 SEO META -->
+    <meta name="keywords" content="Mini Form, Microformix, student form, data collection, Monesh project">
+    <meta name="author" content="Monesh">
+    <meta name="robots" content="index, follow">
 
-<!-- ✅ FAVICON / GOOGLE LOGO -->
-<link rel="icon" type="image/png" href="logo.png">
+    <!-- 📱 RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ GOOGLE SEARCH PREVIEW -->
-<meta property="og:title" content="Mini Form">
-<meta property="og:description" content="Mini Form website by Monesh">
-<meta property="og:image" content="https://monesh-sys.github.io/miniform.eh.kk/logo.png">
-<meta property="og:url" content="https://monesh-sys.github.io/miniform.eh.kk/">
-<meta property="og:type" content="website">
+    <!-- 🌐 OPEN GRAPH (Google / WhatsApp / Facebook) -->
+    <meta property="og:title" content="Mini Form">
+    <meta property="og:description" content="Mini Form is a student data collection website created by Monesh">
+    <meta property="og:image" content="https://monesh-sys.github.io/miniform/logo.png">
+    <meta property="og:url" content="https://monesh-sys.github.io/miniform/">
+    <meta property="og:type" content="website">
 
-<style>
-body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial;
-    color: white;
-    background: linear-gradient(-45deg, #000000, #111111, #222222, #000000);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
-}
+    <!-- 🐦 TWITTER -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mini Form">
+    <meta name="twitter:description" content="Mini Form created by Monesh">
+    <meta name="twitter:image" content="https://monesh-sys.github.io/miniform/logo.png">
 
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+    <!-- ⭐ FAVICON -->
+    <link rel="icon" type="image/png" href="logo.png">
 
-.container {
-    background: rgba(0, 0, 0, 0.55);
-    padding: 30px;
-    width: 85%;
-    max-width: 400px;
-    border-radius: 15px;
-    box-shadow: 0 0 20px rgba(255,255,255,0.3);
-    text-align: center;
-}
+    <!-- 🧠 SCHEMA (VERY IMPORTANT FOR CREATOR INFO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Mini Form",
+      "description": "Mini Form is a student data collection website created by Monesh.",
+      "author": {
+        "@type": "Person",
+        "name": "Monesh"
+      },
+      "url": "https://monesh-sys.github.io/miniform/"
+    }
+    </script>
 
-.logo {
-    width: 90px;
-    margin-bottom: 10px;
-}
+    <!-- 🎨 STYLE -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: linear-gradient(-45deg, #000000, #111111, #222222, #000000);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+        }
 
-h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
 
-label {
-    font-size: 18px;
-    display: block;
-    margin-top: 10px;
-}
+        .container {
+            background: rgba(0, 0, 0, 0.55);
+            padding: 30px;
+            width: 85%;
+            max-width: 400px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255,255,255,0.3);
+            text-align: center;
+        }
 
-input[type="text"], input[type="submit"] {
-    width: 100%;
-    padding: 12px;
-    margin-top: 6px;
-    font-size: 16px;
-    border: none;
-    border-radius: 10px;
-}
+        .logo {
+            width: 90px;
+            margin-bottom: 10px;
+        }
 
-input[type="submit"] {
-    margin-top: 15px;
-    background: #00ffcc;
-    color: black;
-    font-weight: bold;
-    cursor: pointer;
-}
-</style>
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 16px;
+            display: block;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        input[type="text"], input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            margin-top: 6px;
+            font-size: 15px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            background: #00ffcc;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .creator {
+            margin-top: 15px;
+            font-size: 14px;
+            opacity: 0.75;
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="container">
 
-    <!-- ✅ LOGO ON WEBSITE -->
+    <!-- 🖼 LOGO -->
     <img src="logo.png" class="logo" alt="Mini Form Logo">
 
     <h2>Mini Form</h2>
 
+    <!-- 📋 FORM -->
     <form action="https://script.google.com/macros/s/AKfycbwaGKUlnahOD-xf0ex5bbxVVqOiC6QY75UIFeGconjdhNkJEM1sBuDUVqTQyHiLrzRT/exec" method="POST">
 
         <label>Name</label>
@@ -110,6 +145,12 @@ input[type="submit"] {
         <input type="submit" value="Submit">
 
     </form>
+
+    <!-- 👤 VISIBLE CREATOR (GOOGLE TRUSTS THIS) -->
+    <div class="creator">
+        Created by <strong>Monesh</strong>
+    </div>
+
 </div>
 
 </body>
