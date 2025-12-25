@@ -74,7 +74,7 @@ input[type="submit"] {
     <div class="tagline">Smart Student Data Collection</div>
 
     <!-- FORM -->
-    <form id="miniform" action="https://script.google.com/macros/s/AKfycbwaGKUlnahOD-xf0ex5bbxVVqOiC6QY75UIFeGconjdhNkJEM1sBuDUVqTQyHiLrzRT/exec" method="POST">
+    <form id="miniform" action="https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
         <label>Name</label>
         <input type="text" name="name" placeholder="Enter your name" required>
 
@@ -92,7 +92,7 @@ input[type="submit"] {
 
     <!-- Success message -->
     <div class="success-message" id="successMessage">
-        Your form submitted successfully! Thank you.
+        Your form submitted successfully to Monesh! Thank you.
     </div>
 
     <div class="creator">
@@ -100,28 +100,15 @@ input[type="submit"] {
     </div>
 </div>
 
+<!-- Hidden iframe to submit without reload -->
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="
+if(submitted) {
+    document.getElementById('successMessage').style.display='block';
+    document.getElementById('miniform').reset();
+    submitted=false;
+}"></iframe>
 <script>
-// Handle form submit
-const form = document.getElementById("miniform");
-const message = document.getElementById("successMessage");
-
-form.addEventListener("submit", function(e) {
-    e.preventDefault(); // prevent default submit
-    const url = form.action;
-
-    fetch(url, {
-        method: "POST",
-        body: new FormData(form)
-    }).then(response => {
-        // Show success message
-        message.style.display = "block";
-        // Reset the form
-        form.reset();
-    }).catch(error => {
-        alert("There was an error submitting the form. Please try again.");
-        console.error(error);
-    });
-});
+var submitted = false;
 </script>
 
 </body>
